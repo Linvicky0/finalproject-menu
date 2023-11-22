@@ -1,0 +1,126 @@
+nav {
+    text-align: center;
+    background-image: url('../images/lanterns.png');
+    background-position: right 40%;
+    height: 200px;
+    color: #00008B;
+     text-shadow: 0px 0px 5px #d2f6fd, 0px 0px 10px #93bed3, 0px 0px 10px #93d3cc, 0px 0px 20px #93d3cc;
+    background-size: cover;
+
+        opacity: 0.9;    
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+}
+nav h1{
+    padding-top: 25px;
+    font-size: 250%;
+
+}
+nav ul {
+    text-decoration: underline;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #3636b4;
+    height: 50%;
+}
+
+nav ul li {
+    margin-top: 20px;
+    font-size: xx-large;
+    list-style-type: none;
+}
+nav li.active {
+background-color: rgb(215, 243, 250);
+border-radius: 20%;
+height:fit-content;
+border: #0f0f53 5px solid;
+}
+body{
+    background-image: url('../images/dragon.jpeg');
+    background-size: cover;
+}
+
+div div {
+    margin: 30px;
+    padding: 50px;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    
+}
+div h2 {
+     padding: 5px;
+     grid-column: 2;
+     text-align: center;
+}
+div h4{
+    /* background-image: url('../images/dragon.jpeg'); */
+     grid-column: 2;
+     text-align: center;
+     position: relative;
+   }
+
+.neonText {
+    color: #fff;
+    text-shadow:
+        0 0 20px #A52A2A,
+        0 0 20px #ba2b2b,
+        0 0 21px #A52A2A,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+  }
+  .right-arrow {
+    width: 0;
+	height: 0;
+    grid-column: 3;
+    grid-row:2;
+    float: right;
+	border-top: 25px solid transparent;
+	border-left: 50px solid #c32121;
+	border-bottom: 25px solid transparent;
+ }
+ .right-arrow:hover {
+    border-left: 60px solid #861b1b;
+ }
+ .left-arrow:hover {
+    border-right: 60px solid #861b1b;
+
+ }
+ .left-arrow{
+	width: 0;
+	height: 0;
+    grid-column: 1;
+	border-top: 25px solid transparent;
+	border-right: 50px solid #d42b2b;
+	border-bottom: 25px solid transparent;
+ }
+div div:nth-child(1) {
+    background-image: url('../images/buffet.jpeg');
+    background-position: right 15%;
+    height: auto;
+}
+/* @keyframes slide {
+    0%{
+      transform: translate3d(0, 0, 0);
+    }
+    100%{
+      transform: translate3d(-1692px, 0, 0);
+    }
+  } */
+
+div div:nth-child(2) {
+    background-image: url('../images/hotpot.jpeg');
+    background-position: right 15%;
+}
+
+body div > div {
+    background-size: cover;
+    border-radius: 100%;
+    border: solid lightblue 5px;
+    background-position: right 5%;
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+}
