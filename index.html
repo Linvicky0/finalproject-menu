@@ -3,35 +3,49 @@
     <head>
 <meta charset ="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital@1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 <link rel="stylesheet" href="css/style.css">
 <title> Restaurant </title>
 </head>
 <body>
     <nav>
-        <h1> China Buffet </h1>
+        <h1> Asian Buffet </h1>
         <ul>
-            <li> <a href='menu.html' onclick='onpage(this)'> Menu</a> </li> <!-- Contains food and price in grids/boxes or have it like a form -->
-            <li class="active"> <a href = 'index.html' onclick="onpage(this)"> Home </a></li> <!-- Click right or left to see more images at bottom, contains price and picture of the place-->
+            <li class="active"> <a href='index.html' onclick='onpage(this)'> Home</a> </li> <!-- Contains food and price in grids/boxes or have it like a form -->
+            <li > <a href = 'menu.html' onclick="onpage(this)"> Menu </a></li> <!-- Click right or left to see more images at bottom, contains price and picture of the place-->
             <li> <a href ='contact.html' onclick="onpage(this)"> Contact</a> </li>
         </ul>
     </nav>
     <div class ="neonText">
     <div class ="lunch">
-       <h2>Lunch Buffet: 10am - 3pm  </h2> 
-     <span class="right-arrow" onclick="nextImage(this)"></span>
-       <span class="left-arrow" onclick="backImage(this)"></span>
+       <h2>Lunch: 10am - 3pm  </h2> 
+       <h3>
+        <span class="left-arrow" onclick="backImage(this)"></span>
+        <span class="right-arrow" onclick="nextImage(this)"></span>
+
+       </h3>
        <h4> Adults: 10.95 </h4>
        <h4> Kids: 7.95 </h4>
     </div>
     <div class ="dinner"> 
-       <h2 >Dinner Buffet: 3pm - 10pm </h2> 
-       <span class="right-arrow" onclick="nextImage(this)"></span>
+       <h2 >Dinner: 3pm - 10pm </h2> 
+       <h3>
        <span class="left-arrow" onclick="backImage(this)"></span>
-       <h4> Adults: 12.95 </h4>
+       <span class="right-arrow" onclick="nextImage(this)"></span>
+
+    </h3>
+       <h4 > Adults: 12.95 </h4>
+       
        <h4> Kids: 9.95 </h4>
     </div>
 </div>
 </body>
-<script src="js/javascript.js"> </script>
+<script  src="js/javascript.js"> </script>
 
 </html>

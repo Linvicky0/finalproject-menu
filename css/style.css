@@ -17,11 +17,13 @@ nav h1{
 
 }
 nav ul {
-    text-decoration: underline;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: #3636b4;
     height: 50%;
+}
+nav ul li:hover{
+    text-decoration: underline;
 }
 
 nav ul li {
@@ -30,7 +32,7 @@ nav ul li {
     list-style-type: none;
 }
 nav li.active {
-background-color: rgb(215, 243, 250);
+background-color: rgb(170, 224, 237);
 border-radius: 20%;
 height:fit-content;
 border: #0f0f53 5px solid;
@@ -44,20 +46,19 @@ div div {
     margin: 30px;
     padding: 50px;
     width: 50%;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+   
     
 }
-div h2 {
+.neonText h2 {
      padding: 5px;
      grid-column: 2;
      text-align: center;
 }
-div h4{
-    /* background-image: url('../images/dragon.jpeg'); */
+.neonText h4{
      grid-column: 2;
      text-align: center;
      position: relative;
+     
    }
 
 .neonText {
@@ -72,11 +73,14 @@ div h4{
         0 0 102px #0fa,
         0 0 151px #0fa;
   }
+  h3 {
+    display: flex;
+    justify-content: space-between;
+  }
   .right-arrow {
-    width: 0;
-	height: 0;
-    grid-column: 3;
-    grid-row:2;
+ 
+     display: flex;
+  justify-content: space-between;
     float: right;
 	border-top: 25px solid transparent;
 	border-left: 50px solid #c32121;
@@ -89,18 +93,22 @@ div h4{
     border-right: 60px solid #861b1b;
 
  }
+ 
+ h4:first-of-type:before:hover {
+    color: #0f0f53;
+
+ }
  .left-arrow{
-	width: 0;
-	height: 0;
-    grid-column: 1;
 	border-top: 25px solid transparent;
 	border-right: 50px solid #d42b2b;
 	border-bottom: 25px solid transparent;
  }
-div div:nth-child(1) {
+.neonText .lunch:nth-child(1) {
     background-image: url('../images/buffet.jpeg');
     background-position: right 15%;
     height: auto;
+    width: 50%;
+    height: 100%;
 }
 /* @keyframes slide {
     0%{
@@ -111,16 +119,80 @@ div div:nth-child(1) {
     }
   } */
 
-div div:nth-child(2) {
+.neonText .dinner:nth-child(2) {
     background-image: url('../images/hotpot.jpeg');
     background-position: right 15%;
-}
+    width: 50%;
 
-body div > div {
+}
+nav a{
+    font-family: 'Space Mono', monospace;
+    text-decoration: none;
+}
+h1 {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+body .neonText > div {
     background-size: cover;
     border-radius: 100%;
     border: solid lightblue 5px;
     background-position: right 5%;
     background-repeat: no-repeat;
-    /* background-size: contain; */
+}
+
+#menu {
+    border-radius: 15%;
+    display: flex;
+    margin: 10px;
+    
+}
+#food {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.food-img {
+    width: 100%;
+    height: 60%;
+    border-radius: 5px;
+}
+.foodDiv {
+    background-color: #a8aec5;
+    padding: 1%;
+    margin: 1%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #eae1e1;
+
+}
+/* .foodDiv:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
+} */
+
+.food-h2 {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+#contact h1:first-child::before {
+    content: "📍";
+}
+
+#contact  h1:nth-of-type(2)::before {
+    content: "📞";
+}
+#contact p {
+    color:#5151b5;
+}
+
+#contact {
+font-size: large;
+margin: 50px;
+text-align: center;
+font-family: 'Kdam Thmor Pro', sans-serif;
+
+}
+
+.left-arrow:hover, .right-arrow:hover {
+    cursor: pointer;
 }
