@@ -1,4 +1,4 @@
-
+// for index.html
 const imagesLunch = ['../images/buffet.jpeg', '../images/thaichicken.jpeg','../images/homecook.jpeg']
 const imagesDinner = ['../images/hotpot.jpeg', '../images/barbeque.jpeg','../images/dishes.jpeg']
 let imageLunchIndex = 0;

@@ -4,7 +4,7 @@ nav {
     background-position: right 40%;
     height: 200px;
     color: #00008B;
-     text-shadow: 0px 0px 5px #d2f6fd, 0px 0px 10px #93bed3, 0px 0px 10px #93d3cc, 0px 0px 20px #93d3cc;
+    text-shadow: 0px 0px 20px #d2f6fd, 0px 0px 10px #93bed3, 0px 0px 10px #93d3cc, 0px 0px 20px #93d3cc;
     background-size: cover;
 
         opacity: 0.9;    
@@ -19,7 +19,9 @@ nav h1{
 nav ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: #3636b4;
+    /* background-color: #5f5fb9; */
+    background-color: rgb(145, 141, 210);
+
     height: 50%;
 }
 nav ul li:hover{
@@ -30,12 +32,14 @@ nav ul li {
     margin-top: 20px;
     font-size: xx-large;
     list-style-type: none;
+    
+    /* color: black; */
 }
 nav li.active {
 background-color: rgb(170, 224, 237);
 border-radius: 20%;
 height:fit-content;
-border: #0f0f53 5px solid;
+border: #242474 5px solid;
 }
 body{
     background-image: url('../images/dragon.jpeg');
@@ -54,7 +58,7 @@ div div {
      grid-column: 2;
      text-align: center;
 }
-.neonText h4{
+.neonText h3{
      grid-column: 2;
      text-align: center;
      position: relative;
@@ -73,7 +77,7 @@ div div {
         0 0 102px #0fa,
         0 0 151px #0fa;
   }
-  h3 {
+  .arrows {
     display: flex;
     justify-content: space-between;
   }

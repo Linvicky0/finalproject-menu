@@ -15,6 +15,7 @@ function addFood(foodData) {
 
      title.innerHTML = element.name;
      image.src = element.img;
+     image.alt = element.alt;
      description.innerHTML = element.body;
      newdiv.appendChild(image);
      newdiv.appendChild(title);
