@@ -4,14 +4,14 @@ const food = `[
         "name": "Pork Rice",
         "body": "Comes with pork, egg, and white rice",
         "alt": "Delicious pork fried rice",
-        "img": "/images/porkrice.png"
+        "img": "./images/porkrice.png"
 
     },
     {
         "name": "Fried Chicken",
         "body": "Crispy and tender chicken served with sauce",
         "alt": "Chicken with mayo",
-        "img": "/images/chicken.png"
+        "img": "./images/chicken.png"
 
     },
     {

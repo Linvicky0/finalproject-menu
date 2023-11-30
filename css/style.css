@@ -7,9 +7,8 @@ nav {
     text-shadow: 0px 0px 20px #d2f6fd, 0px 0px 10px #93bed3, 0px 0px 10px #93d3cc, 0px 0px 20px #93d3cc;
     background-size: cover;
 
-        opacity: 0.9;    
 
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Verdana', 'sans-serif';
 }
 nav h1{
     padding-top: 25px;
@@ -166,10 +165,7 @@ body .neonText > div {
     box-shadow: 0 0 5px #eae1e1;
 
 }
-/* .foodDiv:hover {
-    cursor: pointer;
-    box-shadow: 0 0 30px lightblue;
-} */
+
 
 .food-h2 {
     font-family: 'Kdam Thmor Pro', sans-serif;
