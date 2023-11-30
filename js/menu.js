@@ -5,6 +5,8 @@ console.log(food_json)
 const parent = document.getElementById("menu");
 function addFood(foodData) {
  food_json.forEach(element => {
+
+
      let newdiv = document.createElement('div');
      newdiv.classList.add('foodDiv');
      let image = document.createElement('img')
@@ -21,6 +23,7 @@ function addFood(foodData) {
      newdiv.appendChild(title);
      newdiv.appendChild(description);
      parent.appendChild(newdiv);
+
     });
 }
 addFood(food_json);

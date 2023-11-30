@@ -130,12 +130,9 @@ div div {
 
 }
 nav a{
-    font-family: 'Space Mono', monospace;
     text-decoration: none;
 }
-h1 {
-    font-family: 'Kdam Thmor Pro', sans-serif;
-}
+
 body .neonText > div {
     background-size: cover;
     border-radius: 100%;
