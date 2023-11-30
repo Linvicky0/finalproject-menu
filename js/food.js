@@ -18,20 +18,20 @@ const food = `[
         "name": "Curry and Garlic Chicken",
         "body": "Stir fried curry chicken with white rice and soup",
         "alt": "Thai classic curry rice",
-        "img": "/images/chickenrice.png"
+        "img": "./images/chickenrice.png"
 
     },
     {
         "name": "Pad Thai",
         "body": "Flavorful Thai noodle dish",
         "alt": "Classic thai noodles",
-        "img": "/images/padthai.png"
+        "img": "./images/padthai.png"
     }, 
     {
         "name": "Potsticker",
         "body": "Filled with choice of meat and veggies",
         "alt": "Fried dumpling",
-        "img": "/images/dumpling.png"
+        "img": "./images/dumpling.png"
     }
 ]`
 
