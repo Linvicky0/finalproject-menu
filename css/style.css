@@ -1,3 +1,4 @@
+
 nav {
     text-align: center;
     background-image: url('../images/lanterns.png');
@@ -6,15 +7,134 @@ nav {
     color: #00008B;
     text-shadow: 0px 0px 20px #d2f6fd, 0px 0px 10px #93bed3, 0px 0px 10px #93d3cc, 0px 0px 20px #93d3cc;
     background-size: cover;
-
-
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Verdana', 'sans-serif';
 }
 nav h1{
     padding-top: 25px;
     font-size: 250%;
+}
+
+body{
+    background-image: url('../images/dragon.jpeg');
+    background-size: cover;
+}
+
+div div {
+    margin: 30px;
+    padding: 50px;
+    width: 50%;
+}
+
+.neonText h2 {
+    padding: 5px;
+    grid-column: 2;
+    text-align: center;
+}
+.neonText h3{
+    grid-column: 2;
+    text-align: center;
+    position: relative;
+  }
+
+.neonText {
+   color: #fff;
+   text-shadow:
+       0 0 20px #A52A2A,
+       0 0 20px #ba2b2b,
+       0 0 21px #A52A2A,
+       0 0 42px #0fa,
+       0 0 82px #0fa,
+       0 0 92px #0fa,
+       0 0 102px #0fa,
+       0 0 151px #0fa;
+ }
+ .neonText .lunch:nth-child(1) {
+    background-image: url('../images/buffet.jpeg');
+    background-position: right 15%;
+    height: auto;
+    width: 50%;
+    height: 100%;
+}
+.neonText .dinner:nth-child(2) {
+    background-image: url('../images/hotpot.jpeg');
+    background-position: right 15%;
+    width: 50%;
 
 }
+
+body .neonText > div {
+    background-size: cover;
+    border-radius: 100%;
+    border: solid lightblue 5px;
+    background-position: right 5%;
+    background-repeat: no-repeat;
+}
+ .food-h2 {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.food-img {
+    width: 100%;
+    height: 60%;
+    border-radius: 5px;
+}
+
+ #contact h1:first-child::before {
+    content: "📍";
+}
+
+#contact  h1:nth-of-type(2)::before {
+    content: "📞";
+}
+#contact p {
+    color:#5151b5;
+}
+
+#contact {
+font-size: large;
+margin: 50px;
+text-align: center;
+font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 600px){
+    nav ul {
+        display: block;
+        text-align: center;
+        
+    }
+   nav ul li {
+       margin: 5px;
+       font-size: large;
+   }
+  
+   .foodDiv {
+     background-color: #a8aec5;
+     margin: auto;
+     padding: 0;
+     text-align: center;
+     width: 60%;
+     padding: 20px 20px 5px 20px;
+   }
+ 
+ #menu {
+    margin-top: 30px;
+    padding: 30px;
+ }
+ #contact {
+    background-color: rgb(190, 144, 144);
+    width: auto;
+    height: auto;
+    display: inline-block;
+ }
+  .lunch, .dinner {
+    display: inline-block;
+    width: auto;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 2500px) {
 nav ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -31,8 +151,6 @@ nav ul li {
     margin-top: 20px;
     font-size: xx-large;
     list-style-type: none;
-    
-    /* color: black; */
 }
 nav li.active {
 background-color: rgb(170, 224, 237);
@@ -40,106 +158,18 @@ border-radius: 20%;
 height:fit-content;
 border: #242474 5px solid;
 }
-body{
-    background-image: url('../images/dragon.jpeg');
-    background-size: cover;
+.foodDiv {
+    background-color: #a8aec5;
+    padding: 1%;
+    margin: 1%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #eae1e1;
 }
 
-div div {
-    margin: 30px;
-    padding: 50px;
-    width: 50%;
-   
-    
+.left-arrow:hover, .right-arrow:hover {
+    cursor: pointer;
 }
-.neonText h2 {
-     padding: 5px;
-     grid-column: 2;
-     text-align: center;
-}
-.neonText h3{
-     grid-column: 2;
-     text-align: center;
-     position: relative;
-     
-   }
-
-.neonText {
-    color: #fff;
-    text-shadow:
-        0 0 20px #A52A2A,
-        0 0 20px #ba2b2b,
-        0 0 21px #A52A2A,
-        0 0 42px #0fa,
-        0 0 82px #0fa,
-        0 0 92px #0fa,
-        0 0 102px #0fa,
-        0 0 151px #0fa;
-  }
-  .arrows {
-    display: flex;
-    justify-content: space-between;
-  }
-  .right-arrow {
- 
-     display: flex;
-  justify-content: space-between;
-    float: right;
-	border-top: 25px solid transparent;
-	border-left: 50px solid #c32121;
-	border-bottom: 25px solid transparent;
- }
- .right-arrow:hover {
-    border-left: 60px solid #861b1b;
- }
- .left-arrow:hover {
-    border-right: 60px solid #861b1b;
-
- }
- 
- h4:first-of-type:before:hover {
-    color: #0f0f53;
-
- }
- .left-arrow{
-	border-top: 25px solid transparent;
-	border-right: 50px solid #d42b2b;
-	border-bottom: 25px solid transparent;
- }
-.neonText .lunch:nth-child(1) {
-    background-image: url('../images/buffet.jpeg');
-    background-position: right 15%;
-    height: auto;
-    width: 50%;
-    height: 100%;
-}
-/* @keyframes slide {
-    0%{
-      transform: translate3d(0, 0, 0);
-    }
-    100%{
-      transform: translate3d(-1692px, 0, 0);
-    }
-  } */
-
-.neonText .dinner:nth-child(2) {
-    background-image: url('../images/hotpot.jpeg');
-    background-position: right 15%;
-    width: 50%;
-
-}
-nav a{
-    text-decoration: none;
-}
-
-body .neonText > div {
-    background-size: cover;
-    border-radius: 100%;
-    border: solid lightblue 5px;
-    background-position: right 5%;
-    background-repeat: no-repeat;
-}
-
 #menu {
     border-radius: 15%;
     display: flex;
@@ -151,45 +181,48 @@ body .neonText > div {
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.food-img {
-    width: 100%;
-    height: 60%;
-    border-radius: 5px;
-}
-.foodDiv {
-    background-color: #a8aec5;
-    padding: 1%;
-    margin: 1%;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 0 5px #eae1e1;
+.arrows {
+    display: flex;
+    justify-content: space-between;
+  }
+  .right-arrow {
+ 
+     display: flex;
+    justify-content: space-between;
+    float: right;
+	border-top: 25px solid transparent;
+	border-left: 50px solid #c32121;
+	border-bottom: 25px solid transparent;
+ }
+
+ .right-arrow:hover {
+    border-left: 60px solid #861b1b;
+ }
+
+ .left-arrow:hover {
+    border-right: 60px solid #861b1b;
+ }
+ 
+ h4:first-of-type:before:hover {
+    color: #0f0f53;
+
+ }
+ .left-arrow{
+	border-top: 25px solid transparent;
+	border-right: 50px solid #d42b2b;
+	border-bottom: 25px solid transparent;
+ }
 
 }
 
+ 
 
-.food-h2 {
-    font-family: 'Kdam Thmor Pro', sans-serif;
-}
+/* @keyframes slide {
+    0%{
+      transform: translate3d(0, 0, 0);
+    }
+    100%{
+      transform: translate3d(-1692px, 0, 0);
+    }
+  } */
 
-#contact h1:first-child::before {
-    content: "📍";
-}
-
-#contact  h1:nth-of-type(2)::before {
-    content: "📞";
-}
-#contact p {
-    color:#5151b5;
-}
-
-#contact {
-font-size: large;
-margin: 50px;
-text-align: center;
-font-family: 'Kdam Thmor Pro', sans-serif;
-
-}
-
-.left-arrow:hover, .right-arrow:hover {
-    cursor: pointer;
-}
