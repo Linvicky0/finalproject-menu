@@ -31,3 +31,14 @@ else {
     div.style.backgroundImage = `url(${imagesDinner[imageDinnerIndex]})`
 }
 }
+// function easeImage(element) {
+//     let div = element.parentElement.parentElement.parentElement;
+//     if (element.classList == 'lunch') {
+//         imageLunchIndex =  (imageLunchIndex+1) % imagesLunch.length;
+//         div.style.backgroundImage = `url(${imagesLunch[imageLunchIndex]})`
+//     }
+//     else {
+//         imageDinnerIndex =  (imageDinnerIndex+1) % imagesDinner.length;
+//         div.style.backgroundImage = `url(${imagesDinner[imageDinnerIndex]})`
+//     }
+// }

@@ -1,14 +1,17 @@
 
 nav {
+    
     text-align: center;
     background-image: url('../images/lanterns.png');
-    background-position: right 40%;
     height: 200px;
     color: #00008B;
     text-shadow: 0px 0px 20px #d2f6fd, 0px 0px 10px #93bed3, 0px 0px 10px #93d3cc, 0px 0px 20px #93d3cc;
     background-size: cover;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Verdana', 'sans-serif';
 }
+.dinner, .lunch {
+    background-size: cover;
+   }
 nav h1{
     padding-top: 25px;
     font-size: 250%;
@@ -19,10 +22,11 @@ body{
     background-size: cover;
 }
 
-div div {
+.neonText div {
     margin: 30px;
     padding: 50px;
     width: 50%;
+
 }
 
 .neonText h2 {
@@ -37,16 +41,11 @@ div div {
   }
 
 .neonText {
-   color: #fff;
+   color: rgb(251, 251, 251);
    text-shadow:
-       0 0 20px #A52A2A,
-       0 0 20px #ba2b2b,
-       0 0 21px #A52A2A,
-       0 0 42px #0fa,
-       0 0 82px #0fa,
-       0 0 92px #0fa,
-       0 0 102px #0fa,
-       0 0 151px #0fa;
+       0 0 20px rgb(17, 17, 149),
+       0 0 20px blue,
+        0 0 42px #0fa
  }
 .lunch {
     background-image: url('../images/buffet.jpeg');
@@ -54,23 +53,15 @@ div div {
     height: auto;
     width: 50%;
     height: 100%;
+
 }
 .dinner {
     background-image: url('../images/hotpot.jpeg');
     background-position: right 15%;
     width: 50%;
-
 }
-
-
  .food-h2 {
     font-family: 'Kdam Thmor Pro', sans-serif;
-}
-
-.food-img {
-    width: 100%;
-    height: 60%;
-    border-radius: 5px;
 }
 
  #contact h1:first-child::before {
@@ -80,23 +71,41 @@ div div {
 #contact  h1:nth-of-type(2)::before {
     content: "📞";
 }
-#contact p {
+#contact p, #contact h2 {
     color:#5151b5;
+    text-decoration: underline;
 }
 
+
 #contact {
+background-color: rgb(165, 180, 200);
+box-shadow: rgb(204, 229, 234) 0 0 20px;
 font-size: large;
 margin: 50px;
+padding: 5px;
 text-align: center;
 font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
-
+.food-img {
+    width: 100%;
+    height: 60%;
+    border-radius: 5px;
+}
+#maps {
+    width: 50%;
+}
 @media screen and (min-width: 300px) and (max-width: 600px){
+  #maps {
+    height:50%;
+  }
+  .neonText h2, .neonText h3 {
+    background-color: #0c0c22;
+    width:fit-content;
+}
     nav ul {
         display: block;
         text-align: center;
-        
     }
    nav ul li {
        margin: 5px;
@@ -116,26 +125,60 @@ font-family: 'Kdam Thmor Pro', sans-serif;
     margin-top: 30px;
     padding: 30px;
  }
- #contact {
-    background-color: rgb(190, 144, 144);
-    width: auto;
-    height: auto;
-    display: inline-block;
- }
- .lunch, .dinner {
-    background-size: cover;
 
- }
- 
 }
+/* Tablet view */
+@media screen and (min-width: 600px) and (max-width:1000px) {
+    .neonText h2, .neonText h3 {
+        background-color: #020202;
+        width:fit-content;
+    }
+    nav ul {
+        margin: auto 0;
+        padding: 0;
+        text-align: center;
+        display: grid;
+        font-size: x-large;
+        list-style-type: none;
+        background-color: rgb(145, 141, 210);
+        grid-template-columns: 1fr 1fr 1fr;
+        position: fixed;
+        top:0;
+        width:100%;
+    }
+    #menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1px;
+    }
+    .foodDiv {
+        background-color: rgb(145, 141, 210);
+        text-align: center;
+        border-bottom:rgb(61, 12, 61) solid 2px;
+        /* border: 0px 0px 0px 5px solid black; */
+    }
+    .foodDiv:last-of-type {
+        display: block;
+        
+        width:100%;
+    }
+   .food-img {
+    float:left;
+    width: 50%;
+    height:100%;
+   }
+
+}
+/* Desktop view */
 @media screen and (min-width: 1000px) and (max-width: 2500px) {
 nav ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* background-color: #5f5fb9; */
     background-color: rgb(145, 141, 210);
-
     height: 50%;
+}
+nav {
+    background-position: right 40%;
 }
 nav ul li:hover{
     text-decoration: underline;
@@ -153,35 +196,42 @@ height:fit-content;
 border: #242474 5px solid;
 }
 body .neonText > div {
-    background-size: cover;
     border-radius: 100%;
     border: solid lightblue 5px;
     background-position: right 5%;
     background-repeat: no-repeat;
 }
+
 .foodDiv {
     background-color: #a8aec5;
     padding: 1%;
     margin: 1%;
     text-align: center;
     border-radius: 10px;
+    width: 25%;
+}
+.foodDiv:hover {
+    cursor: pointer;
     box-shadow: 0 0 5px #eae1e1;
 }
-
+#largediv {
+    width: 75%;
+    height: 100vh;
+    object-fit: cover; 
+    display: inline-block;
+    position: absolute;
+  }
 .left-arrow:hover, .right-arrow:hover {
     cursor: pointer;
 }
 #menu {
     border-radius: 15%;
     display: flex;
-    margin: 10px;
-    
-}
-#food {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    margin: 10px;   
+    justify-content: center;
 }
+
 .arrows {
     display: flex;
     justify-content: space-between;
