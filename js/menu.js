@@ -28,24 +28,4 @@ function addFood(foodData) {
 }
 addFood(food_json);
 
-let images = document.querySelectorAll(".foodDiv");
-images.forEach(image => {
-    image.addEventListener('click', function(event) {
-        if (image.matches('#largediv')) {
-            image.removeAttribute('id', 'largediv');
-        }
-        else {
-            let unique = true;
-       images.forEach(image=> {
-        if (image.matches('#largediv')) {
-            unique = false;
-        }
-       })
-       if (unique) {
-        image.setAttribute('id', 'largediv');
-       }
-        }
-});
-});
-
 

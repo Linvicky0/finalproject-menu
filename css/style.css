@@ -26,19 +26,10 @@ body{
     margin: 30px;
     padding: 50px;
     width: 50%;
+    text-align: center;
+
 
 }
-
-.neonText h2 {
-    padding: 5px;
-    grid-column: 2;
-    text-align: center;
-}
-.neonText h3{
-    grid-column: 2;
-    text-align: center;
-    position: relative;
-  }
 
 .neonText {
    color: rgb(251, 251, 251);
@@ -64,16 +55,15 @@ body{
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
- #contact h1:first-child::before {
+ #contact h2:first-child::before {
     content: "📍";
 }
 
-#contact  h1:nth-of-type(2)::before {
+#contact  h2:nth-of-type(2)::before {
     content: "📞";
 }
-#contact p, #contact h2 {
-    color:#5151b5;
-    text-decoration: underline;
+#contact p {
+    color:#2323b5;
 }
 
 
@@ -152,15 +142,9 @@ font-family: 'Kdam Thmor Pro', sans-serif;
         padding: 1px;
     }
     .foodDiv {
-        background-color: rgb(145, 141, 210);
+        background-color: rgb(154, 151, 196);
         text-align: center;
         border-bottom:rgb(61, 12, 61) solid 2px;
-        /* border: 0px 0px 0px 5px solid black; */
-    }
-    .foodDiv:last-of-type {
-        display: block;
-        
-        width:100%;
     }
    .food-img {
     float:left;
@@ -183,7 +167,6 @@ nav {
 nav ul li:hover{
     text-decoration: underline;
 }
-
 nav ul li {
     margin-top: 20px;
     font-size: xx-large;
@@ -214,13 +197,6 @@ body .neonText > div {
     cursor: pointer;
     box-shadow: 0 0 5px #eae1e1;
 }
-#largediv {
-    width: 75%;
-    height: 100vh;
-    object-fit: cover; 
-    display: inline-block;
-    position: absolute;
-  }
 .left-arrow:hover, .right-arrow:hover {
     cursor: pointer;
 }
@@ -228,7 +204,7 @@ body .neonText > div {
     border-radius: 15%;
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;   
+    margin: 15px;   
     justify-content: center;
 }
 
@@ -237,11 +213,7 @@ body .neonText > div {
     justify-content: space-between;
   }
   .right-arrow {
- 
-     display: flex;
-    justify-content: space-between;
-    float: right;
-	border-top: 25px solid transparent;
+ 	border-top: 25px solid transparent;
 	border-left: 50px solid #c32121;
 	border-bottom: 25px solid transparent;
  }
@@ -253,11 +225,6 @@ body .neonText > div {
  .left-arrow:hover {
     border-right: 60px solid #861b1b;
  }
- 
- h4:first-of-type:before:hover {
-    color: #0f0f53;
-
- }
  .left-arrow{
 	border-top: 25px solid transparent;
 	border-right: 50px solid #d42b2b;
@@ -265,15 +232,4 @@ body .neonText > div {
  }
 
 }
-
- 
-
-/* @keyframes slide {
-    0%{
-      transform: translate3d(0, 0, 0);
-    }
-    100%{
-      transform: translate3d(-1692px, 0, 0);
-    }
-  } */
 
